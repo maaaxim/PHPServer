@@ -90,4 +90,12 @@ class Request
     {
         return $this->uri;
     }
+
+    /**
+     * @return array
+     */
+    public function getParams(): array
+    {
+        return $this->params;
+    }
 }

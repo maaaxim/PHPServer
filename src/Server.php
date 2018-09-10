@@ -90,7 +90,7 @@ class Server
                     $response = call_user_func($callback, $request);
                     socket_write($client, $response, strlen($response));
                     echo "Request from {$clientName} is:" . PHP_EOL;
-                    echo json_encode($request) . PHP_EOL;
+                    echo json_encode($request->getParams()) . PHP_EOL;
                 }
             }
 
